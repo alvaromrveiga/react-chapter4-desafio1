@@ -1,13 +1,24 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Box, Stack, Text, Image, HStack } from "@chakra-ui/react";
+
+import { Logo } from "../components/Logo";
+import { HomeBanner } from "../components/Home/HomeBanner";
+import { HomeIcons } from "../components/Home/HomeIcons";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Stack w="100vw" h="100vh" overflowX="hidden">
       <Head>
-        <title>Create Next App</title>
+        <title>Home | worldtrip</title>
       </Head>
-    </div>
+
+      <Logo />
+
+      <HomeBanner />
+
+      <HomeIcons />
+    </Stack>
   );
 };
 
