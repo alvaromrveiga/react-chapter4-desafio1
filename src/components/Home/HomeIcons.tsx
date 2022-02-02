@@ -18,7 +18,6 @@ export function HomeIcons() {
       </Box>
 
       <Box
-        width="12vw"
         align="center"
         pt="80px"
         pb="80px"
