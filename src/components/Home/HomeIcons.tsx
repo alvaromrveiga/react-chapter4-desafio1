@@ -2,15 +2,15 @@ import { Box, HStack, Image, Text } from "@chakra-ui/react";
 
 export function HomeIcons() {
   return (
-    <HStack ml="100px" mr="140px" justify="space-between">
-      <Box align="center">
+    <HStack ml="10vw" mr="10vw" justify="space-between">
+      <Box align="center" width="12vw">
         <Image src="cocktail.svg" pb="1.5rem" />
         <Text fontWeight="600" fontSize={24} color="gray.600">
           vida noturna
         </Text>
       </Box>
 
-      <Box align="center">
+      <Box align="center" width="12vw">
         <Image src="surf.svg" pb="1.5rem" />
         <Text fontWeight="600" fontSize={24} color="gray.600">
           praia
@@ -18,6 +18,7 @@ export function HomeIcons() {
       </Box>
 
       <Box
+        width="12vw"
         align="center"
         pt="80px"
         pb="80px"
@@ -30,14 +31,14 @@ export function HomeIcons() {
         </Text>
       </Box>
 
-      <Box align="center">
+      <Box width="12vw" align="center">
         <Image src="museum.svg" pb="1.5rem" />
         <Text fontWeight="600" fontSize={24} color="gray.600">
           clássico
         </Text>
       </Box>
 
-      <Box align="center">
+      <Box width="12vw" align="center">
         <Image src="earth.svg" pb="1.5rem" />
         <Text fontWeight="600" fontSize={24} color="gray.600">
           e mais...
