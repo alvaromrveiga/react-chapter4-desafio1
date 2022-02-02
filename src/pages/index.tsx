@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { HomeBanner } from "../components/Home/HomeBanner";
 import { HomeIcons } from "../components/Home/HomeIcons";
-import { HomeSwiper } from "../components/Home/HomeSwiper";
+import { HomeSwiper } from "../components/Home/Swiper/HomeSwiper";
 import { Logo } from "../components/Logo";
 
 const Home: NextPage = () => {
