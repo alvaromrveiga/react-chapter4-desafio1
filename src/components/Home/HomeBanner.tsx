@@ -4,7 +4,7 @@ export function HomeBanner() {
   return (
     <HStack
       justifyContent="space-between"
-      backgroundImage={"sky.jpg"}
+      backgroundImage={"photos/sky.jpg"}
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
@@ -21,7 +21,7 @@ export function HomeBanner() {
         position="relative"
         top="33px"
         paddingRight="140px"
-        src="Airplane.svg"
+        src="icons/Airplane.svg"
         alt="airplane"
         transform="rotate(3deg)"
       />
