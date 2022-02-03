@@ -8,7 +8,7 @@ import { Logo } from "../components/Logo";
 
 const Home: NextPage = () => {
   return (
-    <Box w="100vw" h="100vh" overflowX="hidden">
+    <Box w="100vw" h="100vh">
       <Head>
         <title>Home | worldtrip</title>
       </Head>
