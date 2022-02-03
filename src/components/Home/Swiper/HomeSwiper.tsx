@@ -25,6 +25,7 @@ export function HomeSwiper() {
       >
         <SwiperSlide>
           <Slide
+            href="europa"
             image="/photos/london.jpg"
             title="Europa"
             description="Diversidade de destinos e culturas."
@@ -33,6 +34,7 @@ export function HomeSwiper() {
 
         <SwiperSlide>
           <Slide
+            href="america-do-norte"
             image="/photos/newYork.jpg"
             title="América do Norte"
             description="O destino internacional mais procurado."
@@ -41,6 +43,7 @@ export function HomeSwiper() {
 
         <SwiperSlide>
           <Slide
+            href="america-do-sul"
             image="/photos/buenosAires.jpg"
             title="América do Sul"
             description="Bem pertinho."
@@ -49,6 +52,7 @@ export function HomeSwiper() {
 
         <SwiperSlide>
           <Slide
+            href="asia"
             image="/photos/taiwan.jpg"
             title="Ásia"
             description="Conheça o desconhecido."
@@ -57,6 +61,7 @@ export function HomeSwiper() {
 
         <SwiperSlide>
           <Slide
+            href="africa"
             image="/photos/kenya.jpg"
             title="África"
             description="Novas experiências e aventuras."
@@ -65,6 +70,7 @@ export function HomeSwiper() {
 
         <SwiperSlide>
           <Slide
+            href="oceania"
             image="/photos/newZealand.jpg"
             title="Oceania"
             description="Descubra o não explorado."
