@@ -1,5 +1,5 @@
 import { Box, Grid, Text } from "@chakra-ui/react";
-import { ContinentCIty } from "./ContinentCity";
+import { ContinentCity } from "./ContinentCity";
 
 type City = {
   name: string;
@@ -22,7 +22,8 @@ export function ContinentCities({ cities }: ContinentCitiesProps) {
       <Grid templateColumns="repeat(4, 1fr)" gap="2.8rem" mb="2.25rem">
         {cities?.map((city) => {
           return (
-            <ContinentCIty
+            <ContinentCity
+              key={city.name}
               city={city.name}
               country={city.country}
               image={city.imagePath}
