@@ -1,44 +1,119 @@
 {
-  "continents": {
-    "europe": {
+  "continents": [
+    {
+      "slug": "europa",
       "name": "Europa",
       "bannerPath": "photos/europe/bigben.jpg",
       "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-      "countryCount": "50",
-      "languagesCount": "60",
-      "popularCitiesCount": "27",
-      "cities": {
-        "london": {
+      "countryCount": 50,
+      "languagesCount": 60,
+      "popularCitiesCount": 27,
+      "cities": [
+        {
           "name": "Londres",
           "country": "Reino Unido",
           "imagePath": "photos/europe/londonBridge.jpg",
           "flagPath": "flags/europe/unitedKingdom.svg"
         },
-        "paris": {
+        {
           "name": "Paris",
           "country": "França",
           "imagePath": "photos/europe/paris.jpg",
           "flagPath": "flags/europe/france.svg"
         },
-        "rome": {
+        {
           "name": "Roma",
           "country": "Itália",
           "imagePath": "photos/europe/rome.jpg",
           "flagPath": "flags/europe/italy.svg"
         },
-        "prague": {
+        {
           "name": "Praga",
           "country": "República Tcheca",
           "imagePath": "photos/europe/prague.jpg",
           "flagPath": "flags/europe/czechRepublic.svg"
         },
-        "amsterdam": {
+        {
           "name": "Amsterdã",
           "country": "Holanda",
           "imagePath": "photos/europe/amsterdam.jpg",
           "flagPath": "flags/europe/netherlands.svg"
         }
-      }
+      ]
+    },
+    {
+      "slug": "asia",
+      "name": "Ásia",
+      "bannerPath": "photos/taiwan.jpg",
+      "description": "Ásia",
+      "countryCount": 48,
+      "languagesCount": 2300,
+      "popularCitiesCount": 40,
+      "cities": [
+        {
+          "name": "Taipei",
+          "country": "Taiwan",
+          "imagePath": "photos/taiwan.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "america-do-norte",
+      "name": "América do Norte",
+      "bannerPath": "photos/newYork.jpg",
+      "description": "América do Norte",
+      "countryCount": 23,
+      "languagesCount": 350,
+      "popularCitiesCount": 10,
+      "cities": [
+        {
+          "name": "Nova York",
+          "country": "Estados Unidos",
+          "imagePath": "photos/newYork.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "america-do-sul",
+      "name": "América do Sul",
+      "bannerPath": "photos/buenosAires.jpg",
+      "description": "América do Sul",
+      "countryCount": 12,
+      "languagesCount": 448,
+      "popularCitiesCount": 3,
+      "cities": [
+        {
+          "name": "Buenos Aires",
+          "country": "Argentina",
+          "imagePath": "photos/buenosAires.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "africa",
+      "name": "África",
+      "bannerPath": "photos/kenya.jpg",
+      "description": "África",
+      "countryCount": 54,
+      "languagesCount": 2000,
+      "popularCitiesCount": 3,
+      "cities": []
+    },
+    {
+      "slug": "oceania",
+      "name": "Oceania",
+      "bannerPath": "photos/newZealand.jpg",
+      "description": "Oceania",
+      "countryCount": 14,
+      "languagesCount": 250,
+      "popularCitiesCount": 3,
+      "cities": [
+        {
+          "name": "Auckland",
+          "country": "Nova Zelândia",
+          "imagePath": "photos/newZealand.jpg"
+        }
+      ]
     }
-  }
+  ]
 }
