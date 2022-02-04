@@ -10,22 +10,21 @@ export function Logo({ returnArrow = false }: LogoProps) {
   return (
     <Box w="100vw">
       <Link passHref href="/">
-        <Flex align="center" justify="space-between" marginX="8.75rem">
+        <Flex align="center" justify="space-between" marginX="10vw">
           {returnArrow ? (
             <ChakraLink>
-              <ArrowBackIcon w="2rem" h="2rem" />
+              <ArrowBackIcon w={["4vw", "2vw"]} h={["4vh", "3.5vh"]} />
             </ChakraLink>
           ) : (
-            <Box w="2rem" h="2rem" />
+            <Box w={["4vw", "2vw"]} h={["4vh", "3.5vh"]} />
           )}
 
           <ChakraLink>
             <Image
-              mr="2rem"
-              w="11.5rem"
-              h="2.875rem"
-              mt="1.5rem"
-              mb="1.5rem"
+              mr={["4vw", "2vw"]}
+              w={["22vw", "10vw"]}
+              h={["2.5vh", "5vh"]}
+              marginY={["1.9vh", "2vh"]}
               src="icons/Logo.svg"
               alt="logo"
             />

@@ -1,19 +1,26 @@
 import { Box, Text } from "@chakra-ui/react";
-import React, { useRef, useState } from "react";
-
+import React from "react";
+import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Slide } from "./Slide";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Slide } from "./Slide";
-
 export function HomeSwiper() {
   return (
-    <Box pt="52px" fontWeight={500} fontSize={36} align="center" mb="40px">
+    <Box
+      paddingX={["0", "6.9vw"]}
+      mt={["3vh", "5.8vh"]}
+      fontWeight={500}
+      fontSize={["1.25rem", "2rem"]}
+      lineHeight={["1.875rem", "3.375rem"]}
+      align="center"
+      mb={["3vh", "4vh"]}
+    >
       <Text>Vamos nessa?</Text>
-      <Text pb="40px">Então escolha seu continente</Text>
+      <Text pb={["2.5vh", "5.8vh"]}>Então escolha seu continente</Text>
 
       <Swiper
         pagination={true}
