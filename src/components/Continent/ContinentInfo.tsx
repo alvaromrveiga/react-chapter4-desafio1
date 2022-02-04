@@ -7,7 +7,19 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 
-export function ContinentInfo() {
+interface ContinentInfoProps {
+  description: string;
+  countryCount: number;
+  languagesCount: number;
+  popularCitiesCount: number;
+}
+
+export function ContinentInfo({
+  description,
+  countryCount,
+  languagesCount,
+  popularCitiesCount,
+}: ContinentInfoProps) {
   return (
     <HStack w="100vw" mt="5rem" h="13rem" paddingX="8.75rem" spacing="4.375rem">
       <Text
@@ -17,10 +29,7 @@ export function ContinentInfo() {
         fontSize="1.5rem"
         color="gray.600"
       >
-        A Europa é, por convenção, um dos seis continentes do mundo.
-        Compreendendo a península ocidental da Eurásia, a Europa geralmente
-        divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-        rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+        {description}
       </Text>
 
       <HStack flex="1">
@@ -31,7 +40,7 @@ export function ContinentInfo() {
             fontSize="3rem"
             color="yellow.400"
           >
-            50
+            {countryCount}
           </Text>
           <Text
             align="center"
@@ -50,7 +59,7 @@ export function ContinentInfo() {
             fontSize="3rem"
             color="yellow.400"
           >
-            60
+            {languagesCount}
           </Text>
           <Text
             align="center"
@@ -69,7 +78,7 @@ export function ContinentInfo() {
             fontSize="3rem"
             color="yellow.400"
           >
-            27
+            {popularCitiesCount}
           </Text>
           <HStack justify="center">
             <Text

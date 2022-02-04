@@ -1,16 +1,20 @@
 import { Flex, Text } from "@chakra-ui/react";
 
 interface ContinentBannerProps {
+  bannerPath: string;
   continentName: string;
 }
 
-export function ContinentBanner({ continentName }: ContinentBannerProps) {
+export function ContinentBanner({
+  bannerPath,
+  continentName,
+}: ContinentBannerProps) {
   return (
     <Flex
       w="100vw"
       h="31.25rem"
       align="end"
-      backgroundImage={"photos/europe/bigben.jpg"}
+      backgroundImage={bannerPath}
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
