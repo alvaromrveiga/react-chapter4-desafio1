@@ -7,7 +7,7 @@ interface ContinentCityProps {
   flag: string;
 }
 
-export function ContinentCIty({
+export function ContinentCity({
   city,
   country,
   image,
