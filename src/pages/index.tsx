@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useBreakpointValue } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { HomeBanner } from "../components/Home/HomeBanner";
@@ -7,17 +7,22 @@ import { HomeSwiper } from "../components/Home/Swiper/HomeSwiper";
 import { Logo } from "../components/Logo";
 
 const Home: NextPage = () => {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
-    <Box w="100vw" h="100vh">
+    <Box w="100%" h="100%">
       <Head>
         <title>Home | worldtrip</title>
       </Head>
 
       <Logo />
 
-      <HomeBanner />
+      <HomeBanner isWide={isWideVersion} />
 
-      <HomeIcons />
+      <HomeIcons isWide={isWideVersion} />
 
       <HomeSwiper />
     </Box>
