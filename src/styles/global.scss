@@ -11,4 +11,15 @@
 
     --swiper-pagination-bullet-inactive-color: #999999;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 6vw;
+
+    @media (max-width: 500px) {
+      --swiper-navigation-size: 22px;
+    }
+
+    --swiper-navigation-size: 36px;
+  }
 }
