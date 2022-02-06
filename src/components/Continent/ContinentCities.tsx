@@ -14,12 +14,18 @@ interface ContinentCitiesProps {
 
 export function ContinentCities({ cities }: ContinentCitiesProps) {
   return (
-    <Box mt="5rem" w="100vw" h="43.75rem" paddingX="8.75rem">
-      <Text fontWeight="500" fontSize="2.25rem" color="gray.600">
+    <Box mt={["4.1vh", "8.8vh"]} marginX={["4.3vw", "10vw"]}>
+      <Text fontWeight="500" fontSize={["1.5rem", "2.25rem"]} color="gray.600">
         Cidades +100
       </Text>
 
-      <Grid templateColumns="repeat(4, 1fr)" gap="2.8rem" mb="2.25rem">
+      <Grid
+        mt={["2.5vh", "4.4vh"]}
+        templateColumns={["repeat(1, 1fr)", "repeat(4, 1fr)"]}
+        align="center"
+        gap={["2.5vh", "3.1vw"]}
+        mb={["2vh", "3.8vh"]}
+      >
         {cities?.map((city) => {
           return (
             <ContinentCity

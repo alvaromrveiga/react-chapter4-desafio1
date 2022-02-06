@@ -16,8 +16,7 @@ export function ContinentCity({
   return (
     <GridItem>
       <Box
-        mt="2.5rem"
-        w="16rem"
+        w={["68.2vw", "17.6vw"]}
         border="2px solid"
         borderColor="yellow.40050"
         borderRadius="4px"

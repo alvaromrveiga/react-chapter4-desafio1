@@ -5,6 +5,7 @@ import {
   Text,
   Tooltip,
   Link as ChakraLink,
+  Stack,
 } from "@chakra-ui/react";
 
 interface ContinentInfoProps {
@@ -21,70 +22,75 @@ export function ContinentInfo({
   popularCitiesCount,
 }: ContinentInfoProps) {
   return (
-    <HStack w="100vw" mt="5rem" h="13rem" paddingX="8.75rem" spacing="4.375rem">
+    <Stack
+      direction={["column", "row"]}
+      mt={["3vh", "8.8vh"]}
+      marginX={["4.3vw", "10vw"]}
+      spacing={["2vh", "4.8vw"]}
+      align="center"
+    >
       <Text
-        flex="1"
+        w={["100%", "41.6vw"]}
         align="justify"
         fontWeight="400"
-        fontSize="1.5rem"
+        fontSize={["0.875rem", "1.5rem"]}
         color="gray.600"
       >
         {description}
       </Text>
-
-      <HStack flex="1">
-        <Box flex="1">
+      <HStack w={["100%", "34vw"]} spacing={["10.8vw", "2.9vw"]}>
+        <Box>
           <Text
-            align="center"
+            align={["left", "center"]}
             fontWeight="600"
-            fontSize="3rem"
+            fontSize={["1.5rem", "3rem"]}
             color="yellow.400"
           >
             {countryCount}
           </Text>
           <Text
-            align="center"
-            fontWeight="600"
-            fontSize="1.5rem"
+            align={["left", "center"]}
+            fontWeight={["400", "600"]}
+            fontSize={["1.125rem", "1.5rem"]}
             color="gray.600"
           >
             países
           </Text>
         </Box>
 
-        <Box flex="1">
+        <Box>
           <Text
-            align="center"
+            align={["left", "center"]}
             fontWeight="600"
-            fontSize="3rem"
+            fontSize={["1.5rem", "3rem"]}
             color="yellow.400"
           >
             {languagesCount}
           </Text>
           <Text
-            align="center"
-            fontWeight="600"
-            fontSize="1.5rem"
+            align={["left", "center"]}
+            fontWeight={["400", "600"]}
+            fontSize={["1.125rem", "1.5rem"]}
             color="gray.600"
           >
             línguas
           </Text>
         </Box>
 
-        <Box flex="2">
+        <Box>
           <Text
-            align="center"
+            align={["left", "center"]}
             fontWeight="600"
-            fontSize="3rem"
+            fontSize={["1.5rem", "3rem"]}
             color="yellow.400"
           >
             {popularCitiesCount}
           </Text>
-          <HStack justify="center">
+          <HStack>
             <Text
-              align="center"
-              fontWeight="600"
-              fontSize="1.5rem"
+              align={["left", "center"]}
+              fontWeight={["400", "600"]}
+              fontSize={["1.125rem", "1.5rem"]}
               color="gray.600"
             >
               cidades +100
@@ -98,8 +104,8 @@ export function ContinentInfo({
                 href="https://www.visualcapitalist.com/the-100-most-popular-city-destinations/"
               >
                 <InfoOutlineIcon
-                  w="1rem"
-                  h="1rem"
+                  w={["0.625rem", "1rem"]}
+                  h={["0.625rem", "1rem"]}
                   color="gray.400"
                 ></InfoOutlineIcon>
               </ChakraLink>
@@ -107,6 +113,6 @@ export function ContinentInfo({
           </HStack>
         </Box>
       </HStack>
-    </HStack>
+    </Stack>
   );
 }

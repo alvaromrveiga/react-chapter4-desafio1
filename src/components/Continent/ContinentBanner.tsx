@@ -12,17 +12,19 @@ export function ContinentBanner({
   return (
     <Flex
       w="100vw"
-      h="31.25rem"
-      align="end"
+      h={["19.3vh", "55vh"]}
+      align={["center", "end"]}
+      justify={["center", "start"]}
       backgroundImage={bannerPath}
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
       <Text
-        ml="8.75rem"
-        mb="3.75rem"
+        ml={["0", "10vw"]}
+        mb={["0", "6.5vh"]}
         fontWeight="600"
-        fontSize="3rem"
+        fontSize={["1.75rem", "3rem"]}
+        lineHeight={["2.5rem", "4.5rem"]}
         color="gray.50"
       >
         {continentName}
