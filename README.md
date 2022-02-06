@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alvaromrveiga/react-chapter4-desafio1/main/assets/reactChapter04Desafio01-Web.png">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alvaromrveiga/react-chapter4-desafio1/main/assets/reactChapter04Desafio01-Mobile.png">
+</p>
+  
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
